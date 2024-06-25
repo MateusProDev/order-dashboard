@@ -1,27 +1,11 @@
 body {
-  width: 100%;
+  width: 100vw;
   font-family: Arial, sans-serif;
   background-color: #e2e8f0;
   margin: 0;
   padding: 0;
   display: flex;
 }
-
-.content {
-  padding: 20px;
-  width: calc(100% - 205px);
-  transition: margin-left 0.3s ease;
-}
-
-.dashboard {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 100%;
-  margin: auto;
-}
-
 
 .header h1 {
   font-size: 24px;

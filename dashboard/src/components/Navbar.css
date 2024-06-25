@@ -1,4 +1,5 @@
 .top-navbar {
+  width: 100vw;
   background: linear-gradient(to right, #805ad5, #4b3f72, #2e1d6a );
   color: #ffffff;
   height: 60px;
@@ -45,6 +46,7 @@
 }
 
 .top-navbar .profile-icon {
+  margin-right: 20px;
   font-size: 40px; /* Ajuste conforme necessário */
   color: #ffffff;
   transition: color 0.3s;
