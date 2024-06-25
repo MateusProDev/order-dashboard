@@ -1,0 +1,55 @@
+.top-navbar {
+  background: linear-gradient(to right, #805ad5, #4b3f72, #2e1d6a );
+  color: #ffffff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.top-navbar .logo img.logo-image {
+  margin-top: 5px;
+  height: 40px; /* Ajuste conforme necessário */
+}
+
+.top-navbar nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.top-navbar nav ul li {
+  margin: 0 10px;
+}
+
+.top-navbar nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.top-navbar nav ul li a:hover {
+  color: #7289da;
+}
+
+.top-navbar .profile-icon {
+  font-size: 40px; /* Ajuste conforme necessário */
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.top-navbar .profile-icon:hover {
+  color: #805ad5;
+}

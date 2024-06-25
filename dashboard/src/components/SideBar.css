@@ -1,17 +1,113 @@
-/* src/components/Sidebar.css */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 999; /* Z-index alto para sobrepor outros elementos */
-    overflow-y: auto; /* Habilita rolagem vertical se o conteúdo ultrapassar a altura */
-    transition: transform 0.3s ease; /* Animação de transição */
-  }
-  
- 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e2e8f0;
+  margin: 0;
+  padding: 0;
+}
 
- 
-  
- 
-  
+.navbar {
+  width: 280px;
+  background-color: #805ad5;
+  color: #ffffff;
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 0;
+  top: 60px; /* Ajuste para considerar a altura da navbar */
+  bottom: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  padding: 25px 20px;
+  border-bottom: 1px solid #e2e8f036;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li .icon {
+  margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center; /* Garantir alinhamento vertical central */
+}
+
+nav ul li a:hover {
+  color: #2d3748;
+  transform: scale(1.05);
+  font-weight: bold; /* Adiciona negrito ao texto */
+  text-decoration: none; /* Remova ou adicione a decoração conforme necessário */
+}
+
+.content {
+  margin-left: 280px;
+  margin-top: 60px; /* Ajuste para considerar a altura da navbar */
+  padding: 20px;
+  width: calc(100% - 280px);
+  transition: margin-left 0.3s ease;
+}
+
+.dashboard {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+  color: #2d3748;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cards.flex-column {
+  flex-direction: column;
+}
+
+.main-content {
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
