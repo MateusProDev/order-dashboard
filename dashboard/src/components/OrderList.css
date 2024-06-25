@@ -1,0 +1,33 @@
+.order-list {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-list th, .order-list td {
+    padding: 15px;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+  }
+  
+  .order-list th {
+    background-color: #2e1d6a;
+    color: #ffffff;
+  }
+  
+  .order-list td {
+    background-color: #ffffff;
+    color: #4a5568;
+  }
+  
+  .order-list tr:nth-child(even) {
+    background-color: #f9fafb;
+  }
+  
+  .order-list tr:hover {
+    background-color: #f1f5f9;
+    transition: background-color 0.3s;
+  }
+  

@@ -1,0 +1,32 @@
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card h3 {
+    font-size: 16px;
+    color: #805ad5;
+  }
+  
+  .card p {
+    font-size: 24px;
+    color: #2d3748;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      margin: 10px 0;
+    }
+  }
+  
