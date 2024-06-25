@@ -1,8 +1,10 @@
+// src/App.jsx
 import React, { useState, useEffect } from "react";
 import Card from "./components/Card";
 import OrderList from "./components/OrderList";
+import SideBar from "./components/SideBar"; // Importando o componente Sidebar
 import ordersData from "./data/orders.json";
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import "./App.css";
 
 function App() {
@@ -23,33 +25,9 @@ function App() {
   };
 
   return (
-    <Router> {/* Certifique-se de envolver o conteúdo com o Router */}
+    <Router>
       <>
-        <div className={`navbar ${isMenuOpen ? "open" : ""}`}>
-          <div className="logo">
-            <img src="/logo.png" alt="Logo" />
-          </div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/dashboard">Dashboard</Link>
-              </li>
-              <li>
-                <Link to="/orders">Orders</Link>
-              </li>
-              <li>
-                <Link to="/products">Products</Link>
-              </li>
-              <li>
-                <Link to="/customers">Customers</Link>
-              </li>
-              <li>
-                <Link to="/settings">Settings</Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
+        <SideBar isOpen={isMenuOpen} toggleMenu={toggleMenu} /> {/* Usando o componente Sidebar */}
         <div className="content">
           <button className="menu-toggle" onClick={toggleMenu}>
             <span></span>

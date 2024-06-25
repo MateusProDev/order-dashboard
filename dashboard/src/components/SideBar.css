@@ -1,0 +1,17 @@
+/* src/components/Sidebar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999; /* Z-index alto para sobrepor outros elementos */
+    overflow-y: auto; /* Habilita rolagem vertical se o conteúdo ultrapassar a altura */
+    transition: transform 0.3s ease; /* Animação de transição */
+  }
+  
+ 
+
+ 
+  
+ 
+  

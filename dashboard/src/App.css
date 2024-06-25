@@ -29,18 +29,6 @@ body {
   justify-content: space-between;
   margin-bottom: 20px;
 }
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f1f5f8;
-}
-
-.app {
-  display: flex;
-  height: 100vh;
-  overflow: hidden;
-}
 
 .navbar {
   width: 280px;
@@ -111,9 +99,10 @@ nav ul li a:hover {
   display: block;
   width: 25px;
   height: 3px;
-  background-color: #c04f4f;
+  background-color: #7289da;
   margin-bottom: 5px;
   transition: transform 0.3s, opacity 0.3s;
+  z-index: 1111; /* Z-index alto para sobrepor outros elementos */
 }
 
 .menu-toggle.open span:nth-child(1) {
