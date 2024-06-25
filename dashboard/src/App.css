@@ -43,4 +43,7 @@ body {
   .cards {
     flex-direction: column;
   }
+  @media (max-width: 1023px) {
+    
+  }
 }

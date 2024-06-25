@@ -108,4 +108,9 @@ nav ul li a:hover {
   .cards {
     flex-direction: column;
   }
+  @media (max-width: 1023px) {
+    .dashboard {
+      width: 100vw;
+    }
+  }
 }
